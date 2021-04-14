@@ -1,7 +1,7 @@
 {
   "name": "type-script-node-api",
   "version": "1.0.0",
-  "description": "Type Script node api starter project",
+  "description": "Type Script API development project.",
   "main": "source/index.ts",
   "scripts": {
     "build": "tsc --project ./",
