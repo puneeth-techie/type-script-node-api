@@ -1,7 +1,7 @@
 import http from 'http'
-import app from '@startup/app'
-import config from '@config/config'
-import logging from '@config/logging'
+import app from './startup/app';
+import config from './config/config'
+import logging from './config/logging'
 
 const NAMESPACE = 'Server';
 

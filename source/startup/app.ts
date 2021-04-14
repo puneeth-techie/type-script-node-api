@@ -1,5 +1,6 @@
 import express from 'express'
-import logging from '@config/logging';
+import logging from '../config/logging';
+import {notFound, errorHandler} from '../middlewares/errorHandler'
 
 /** Init express */
 const app = express()
@@ -32,5 +33,12 @@ app.use((req, res, next) => {
 
     next();
 });
+
+
+/** Routes handler */
+
+/** Error handler */
+app.use(notFound)
+app.use(errorHandler)
 
 export default app;

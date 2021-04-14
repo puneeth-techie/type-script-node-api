@@ -25,7 +25,7 @@ const error = (namespace: string, message: string, object?: any) => {
     if(object){
         console.error(`[${getTimeStamp()}] [ERROR] [${namespace}] [${message}]`, object)
     }else{
-        console.error(`[${getTimeStamp()}] [ERROr] [${namespace}] [${message}]`)
+        console.error(`[${getTimeStamp()}] [ERROR] [${namespace}] [${message}]`)
     }
 }
 /**Logging debug */

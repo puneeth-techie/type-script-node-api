@@ -1,20 +1,27 @@
 import dotenv from 'dotenv'
 
-// init config
+/** Dotenv configuration */
 dotenv.config();
 
-const SERVER_HOSTNAME = process.env.SERVER_HOSTNAME || 'localhost';
-const SERVER_PORT = process.env.SERVER_PORT || 5000;
+const SERVER_HOSTNAME: string = process.env.SERVER_HOSTNAME || 'localhost';
+const SERVER_PORT: number | string = process.env.SERVER_PORT || 5000;
+const NODE_ENV: string = process.env.NODE_ENV || 'development'
 
-// Server Object
+/** Server environments */
 const Server = {
     hostname: SERVER_HOSTNAME,
     port: SERVER_PORT
 }
 
+/** Development environments */
+const Development = {
+    node_env: NODE_ENV
+}
+
 // Configuration object
 const config = {
-    server: Server
+    server: Server,
+    development: Development
 }
 
 export default config;
