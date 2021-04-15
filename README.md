@@ -10,6 +10,9 @@ Create a .env file in then root and add the following or change the configuratio
 SERVER_HOSTNAME = localhost
 SERVER_PORT = 5000
 NODE_ENV = development
+MONGO_USERNAME =
+MONGO_PASSWORD =
+MONGO_URL = monogdb://localhost/YourDBName or you can use cluster url
 ```
 
 ### Install Dependencies (backend)
