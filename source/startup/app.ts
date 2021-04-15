@@ -1,6 +1,7 @@
 import express from 'express'
 import logging from '../config/logging';
 import {notFound, errorHandler} from '../middlewares/errorHandler'
+import bookRoute from '../routes/book'
 
 /** Init express */
 const app = express()
@@ -36,6 +37,8 @@ app.use((req, res, next) => {
 
 
 /** Routes handler */
+app.use('/api/book', bookRoute);
+
 
 /** Error handler */
 app.use(notFound)
